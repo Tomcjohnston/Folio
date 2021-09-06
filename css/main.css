@@ -24,7 +24,6 @@
 
 }
 
-
 audio,
 canvas,
 iframe,
@@ -325,7 +324,7 @@ button.link:active,button.link:visited, button2.link:link{
   background-color: black;
   border-radius: 50%;
   display: inline-block;
-    margin-right: 2px;
+    margin-right: 3px;
 }
 
 .dot-white {
@@ -334,7 +333,7 @@ button.link:active,button.link:visited, button2.link:link{
   background-color: white;
   border-radius: 50%;
   display: inline-block;
-    margin-right: 2px;
+    margin-right: 3px;
     
 }
 
@@ -828,7 +827,7 @@ box-shadow: 1px 4px 25px rgba(10,0,0,0.25);
 }
 
 
-#pink{
+#cover{
     background: transparent;
     opacity: 0;
     width: 100%;
@@ -840,7 +839,7 @@ box-shadow: 1px 4px 25px rgba(10,0,0,0.25);
     transition: 333ms ease-in-out;
 }
 
-#pink.tester{
+#cover.open{
     background: white;
     opacity: 0.001;
     width: 100%;
@@ -858,16 +857,22 @@ box-shadow: 1px 4px 25px rgba(10,0,0,0.25);
 
 @media only screen and (max-width: 500px){
     
+nav{
+    position: absolute;
+    padding: 12px 15px 15px 10px;
+    margin: 0px;
+    display: inline-flex;
+}
     
 .h1{
-    font-family: neue-haas-grotesk-text,sans-serif;
+    font-family: neue-haas-grotesk-display,sans-serif;
     font-weight: 600;
     font-style: normal;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing:antialiased;
     font-size: 19px;
     line-height: 1.2;
-    letter-spacing: -0.0em; 
+    letter-spacing: -0.015em; 
     margin: 0px;
     padding: 0px;
     font-feature-settings: "kern";
@@ -923,6 +928,16 @@ box-shadow: 1px 4px 25px rgba(10,0,0,0.25);
 }
 
     
+.about {
+    width: auto;
+    display: flex;
+    margin: 0px;
+    padding: 18px;
+    background-color: transparent;
+    width: 100%;
+    display: block;
+}
+    
 button{
 
     background-color: rgb(255, 255, 255, 0.7);
@@ -962,8 +977,8 @@ button{
 
     
 #contact{
-    top: 60px;
-    left: 20px;
+    top: 20px;
+    left: 12px;
     position: fixed;
     visibility: none;
     opacity: 0;
@@ -973,8 +988,8 @@ button{
 }
 
 #contact.see{
-    top: 60px;
-    left: 20px;
+    top: 42px;
+    left: 12px;
     position: absolute;
     opacity: 1;
     visibility: visible;
@@ -985,7 +1000,7 @@ button{
 
 }
     
-    #myDiv.fullscreen{
+#myDiv.fullscreen{
     
 padding: 0px;
 background: none;
@@ -1067,6 +1082,31 @@ box-shadow: 1px 4px 25px rgba(10,0,0,0.25);
     
 }
     
+.caption{
+    bottom: 15px;
+    left: 10px;
+    padding: 0px;
+    width: 95%;
+    position:absolute;
+    display: flex;
+    z-index: 900;
+    text-align: left;
+
+
+}
+
+.caption-white{
+    bottom: 15px;
+    left:10px;
+    width: 95%;
+    padding: 0px;
+    position:absolute;
+    display: flex;
+    z-index: 900;
+    text-align: left;
+    color: white;
+
+}
     
     
 }
