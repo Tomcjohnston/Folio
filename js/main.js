@@ -15,3 +15,7 @@ $('button').click(function(e){
 $('button').click(function(e){
     $('#information').toggleClass('exit'); 
 });
+
+$('button').click(function(e){
+    $('#clear').toggleClass('blur'); 
+});
