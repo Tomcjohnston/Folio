@@ -204,7 +204,7 @@ background-color: #F6F6F6;
 .landscape-image-wide{
     display: flex;
     position: absolute;
-    width: 80%;
+    width: 70%;
     margin: 0px;
     padding: 20px;
     -webkit-box-align: center;
@@ -961,7 +961,7 @@ transition: 0.75s ease-in-out;
     
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
 
     
 .xyz{
@@ -1399,8 +1399,9 @@ box-shadow: 1px 4px 25px rgba(10,0,0,0.25);
 }
 
 
-@media only screen and (max-height: 380px){
 
+@media screen and (max-width: 650px), 
+       screen and (max-height: 400px) {
     
 .xyz{
         visibility: hidden;
@@ -1414,13 +1415,11 @@ box-shadow: 1px 4px 25px rgba(10,0,0,0.25);
     font-style: normal;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing:antialiased;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 1.2;
     letter-spacing: -0.015em; 
     margin: 0px;
     padding: 0px;
-    font-feature-settings: "kern";
-
 }
     
         
